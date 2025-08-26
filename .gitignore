@@ -1,0 +1,10 @@
+/charts/*/charts
+.idea
+.vscode
+.project
+.settings
+.DS_Store
+/helmfile.yaml
+.drone.yml
+**/ci/templated.yaml
+ownconfigs/*
