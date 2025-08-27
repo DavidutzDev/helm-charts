@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  checkmate-chart:
+  - apiVersion: v2
+    appVersion: "2.3"
+    created: "2025-08-28T00:49:15.3138087+02:00"
+    description: A Helm chart for Checkmate App
+    digest: 611fa05d18a3c5b62891027c2f831793a08842b18dff455ed74ff870ec4aa062
+    name: checkmate-chart
+    type: application
+    urls:
+    - https://davidutzdev.github.io/helm-charts/checkmate-chart-0.1.0.tgz
+    version: 0.1.0
   ocis:
   - apiVersion: v2
     appVersion: 7.1.4
-    created: "2025-08-27T21:23:05.5483944+02:00"
+    created: "2025-08-28T00:49:15.333923+02:00"
     description: ownCloud Infinite Scale (oCIS) Helm chart
     digest: 9a58d8e21ce41d101cda9a1d059819561328491c12f5a9c6e31ef06e3a6a49df
     keywords:
@@ -22,4 +33,4 @@ entries:
     urls:
     - https://davidutzdev.github.io/helm-charts/ocis-0.7.0.tgz
     version: 0.7.0
-generated: "2025-08-27T21:23:05.5360008+02:00"
+generated: "2025-08-28T00:49:15.3096847+02:00"
