@@ -3,7 +3,7 @@ entries:
   checkmate-chart:
   - apiVersion: v2
     appVersion: "2.3"
-    created: "2025-08-28T00:49:15.3138087+02:00"
+    created: "2025-08-28T12:52:55.233857+02:00"
     description: A Helm chart for Checkmate App
     digest: 611fa05d18a3c5b62891027c2f831793a08842b18dff455ed74ff870ec4aa062
     name: checkmate-chart
@@ -14,7 +14,7 @@ entries:
   ocis:
   - apiVersion: v2
     appVersion: 7.1.4
-    created: "2025-08-28T00:49:15.333923+02:00"
+    created: "2025-08-28T12:52:55.2410659+02:00"
     description: ownCloud Infinite Scale (oCIS) Helm chart
     digest: 9a58d8e21ce41d101cda9a1d059819561328491c12f5a9c6e31ef06e3a6a49df
     keywords:
@@ -33,4 +33,67 @@ entries:
     urls:
     - https://davidutzdev.github.io/helm-charts/ocis-0.7.0.tgz
     version: 0.7.0
-generated: "2025-08-28T00:49:15.3096847+02:00"
+  opencloud:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-08-28T12:52:55.2436817+02:00"
+    description: OpenCloud Helm community chart
+    digest: 4e11d56d221ba5e18761c280c556b4a2268bcefa9a67e4bfc4eefa321a6238e3
+    keywords:
+    - opencloud
+    - owncloud
+    - ocis
+    maintainers:
+    - email: info@opencloud.eu
+      name: OpenCloud EU
+      url: https://opencloud.eu
+    name: opencloud
+    sources:
+    - https://github.com/opencloud-eu/opencloud
+    - https://github.com/owncloud/ocis
+    - https://github.com/cs3org/reva
+    type: application
+    urls:
+    - https://davidutzdev.github.io/helm-charts/opencloud-0.2.3.tgz
+    version: 0.2.3
+  opencloud-dev:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2025-08-28T12:52:55.2441913+02:00"
+    description: 'DEV Deployment of the OpenCloud dockerfile. The DEV Helm chart follows
+      the description given for starting a docker instance: https://docs.opencloud.eu/docs/admin/getting-started/docker.
+      It is not thought for productive use'
+    digest: f8bb21dcc58a2c83868e6af55273734df1b3e47696fba3e07a431fc4a9403191
+    home: https://github.com/opencloud-eu/helm
+    name: opencloud-dev
+    sources:
+    - https://github.com/opencloud-eu/helm
+    type: application
+    urls:
+    - https://davidutzdev.github.io/helm-charts/opencloud-dev-0.1.0.tgz
+    version: 0.1.0
+  opencloud-microservices:
+  - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2025-08-28T12:52:55.2503552+02:00"
+    description: 'Microservice OpenCloud deployment with pod-per-service architecture.
+      WARNING: Higher complexity and resource usage than standard deployment. Each
+      OpenCloud service runs in its own pod for fine-grained control. '
+    digest: 74e6fb4c0f2eeaf272ddc5fc6fcebdfa76db00372684b97a3027391c320f84e6
+    keywords:
+    - opencloud
+    - oc
+    maintainers:
+    - email: info@opencloud.eu
+      name: OpenCloud EU
+      url: https://opencloud.eu
+    name: opencloud-microservices
+    sources:
+    - https://github.com/opencloud-eu/helm
+    - https://github.com/opencloud-eu/opencloud
+    - https://github.com/cs3org/reva
+    type: application
+    urls:
+    - https://davidutzdev.github.io/helm-charts/opencloud-microservices-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-08-28T12:52:55.2333453+02:00"
