@@ -255,9 +255,9 @@ spec:
             - name: GRAPH_USERNAME_MATCH
               value: "none"
             - name: PROXY_ROLE_ASSIGNMENT_OIDC_CLAIM
-              value: "roles"
+              value: "groups"
             - name: PROXY_OIDC_ACCESS_TOKEN_VERIFY_METHOD
-              value: "jwt"
+              value: "none"
             - name: WEB_OIDC_METADATA_URL
               {{- if .Values.global.oidc.issuer }}
               value: {{ printf "%s/.well-known/openid-configuration" .Values.global.oidc.issuer | quote }}
@@ -265,7 +265,7 @@ spec:
               value: {{ printf "https://%s/realms/%s/.well-known/openid-configuration" (include "opencloud.keycloak.domain" .) .Values.keycloak.internal.realm | quote }}
               {{- end }}
             - name: WEB_OIDC_SCOPE
-              value: "openid profile email groups roles"
+              value: "openid profile email groups"
             {{- end }}
             # Admin user password
             - name: IDM_ADMIN_PASSWORD
