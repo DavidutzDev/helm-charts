@@ -256,6 +256,8 @@ spec:
               value: "none"
             - name: PROXY_ROLE_ASSIGNMENT_OIDC_CLAIM
               value: "groups"
+            - name: PROXY_ACCESS_TOKEN_VERIFY_METHOD
+              value: "none"
             - name: PROXY_OIDC_ACCESS_TOKEN_VERIFY_METHOD
               value: "none"
             - name: WEB_OIDC_METADATA_URL

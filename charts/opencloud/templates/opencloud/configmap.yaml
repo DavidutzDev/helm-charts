@@ -22,48 +22,6 @@ data:
 {{- else -}}
 {{ .Values.opencloud.config.csp | nindent 4 }}
 {{- end }}
-
-  # Custom patch
-  proxy.yaml: |-
-    role_assignment:
-      driver: oidc
-      oidc_role_mapper:
-          role_claim: groups
-          role_mapping:
-              - role_name: admin    # Opencloud role name
-                claim_value: admins # Authentik group name
-              - role_name: user
-                claim_value: authentik users
-              - role_name: guest
-                claim_value: authentik users
-    additional_policies:
-      - name: default
-        routes:
-          - endpoint: /caldav/
-            backend: http://radicale:5232
-            remote_user_header: X-Remote-User
-            skip_x_access_token: true
-            additional_headers:
-              - X-Script-Name: /caldav
-          - endpoint: /.well-known/caldav
-            backend: http://radicale:5232
-            remote_user_header: X-Remote-User
-            skip_x_access_token: true
-            additional_headers:
-              - X-Script-Name: /caldav
-          - endpoint: /carddav/
-            backend: http://radicale:5232
-            remote_user_header: X-Remote-User
-            skip_x_access_token: true
-            additional_headers:
-              - X-Script-Name: /carddav
-          - endpoint: /.well-known/carddav
-            backend: http://radicale:5232
-            remote_user_header: X-Remote-User
-            skip_x_access_token: true
-            additional_headers:
-              - X-Script-Name: /carddav
-
   # Banned password list
   banned-password-list.txt: |-
 {{- if empty .Values.opencloud.config.bannedPasswordList -}}
