@@ -22,6 +22,15 @@ data:
 {{- else -}}
 {{ .Values.opencloud.config.csp | nindent 4 }}
 {{- end }}
+
+    # Proxy configuration
+  proxy.yaml: |-
+{{- if empty .Values.opencloud.config.proxy -}}
+{{ .Files.Get "files/opencloud/proxy.yaml" | nindent 4 }}
+{{- else -}}
+{{ .Values.opencloud.config.proxy | nindent 4 }}
+{{- end }}
+
   # Banned password list
   banned-password-list.txt: |-
 {{- if empty .Values.opencloud.config.bannedPasswordList -}}

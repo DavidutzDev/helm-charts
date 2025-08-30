@@ -3,7 +3,7 @@ entries:
   checkmate-chart:
   - apiVersion: v2
     appVersion: "2.3"
-    created: "2025-08-30T18:26:20.9212739+02:00"
+    created: "2025-08-30T19:41:11.1404604+02:00"
     description: A Helm chart for Checkmate App
     digest: 611fa05d18a3c5b62891027c2f831793a08842b18dff455ed74ff870ec4aa062
     name: checkmate-chart
@@ -14,7 +14,7 @@ entries:
   ocis:
   - apiVersion: v2
     appVersion: 7.1.4
-    created: "2025-08-30T18:26:20.9274876+02:00"
+    created: "2025-08-30T19:41:11.1471759+02:00"
     description: ownCloud Infinite Scale (oCIS) Helm chart
     digest: 9a58d8e21ce41d101cda9a1d059819561328491c12f5a9c6e31ef06e3a6a49df
     keywords:
@@ -36,9 +36,9 @@ entries:
   opencloud:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-08-30T18:26:20.9295647+02:00"
+    created: "2025-08-30T19:41:11.1492342+02:00"
     description: OpenCloud Helm community chart
-    digest: d9d47a7832297b26bf28aa3892ec2c3486fbc9f83e4af956f5458a170c754d8e
+    digest: 56331363f99093649fc187454e5f1191c2fca03fdc330e2e28709a1a1dbde81b
     keywords:
     - opencloud
     - owncloud
@@ -56,4 +56,4 @@ entries:
     urls:
     - https://davidutzdev.github.io/helm-charts/opencloud-0.2.3.tgz
     version: 0.2.3
-generated: "2025-08-30T18:26:20.9207572+02:00"
+generated: "2025-08-30T19:41:11.1399425+02:00"
